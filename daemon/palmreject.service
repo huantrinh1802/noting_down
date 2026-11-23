@@ -4,7 +4,7 @@ After=systemd-udevd.service
 
 [Service]
 ExecStartPre=/usr/bin/modprobe uinput
-ExecStart=/usr/bin/python /opt/noting_down/palmreject.py --pen-max 12 --palm-min 40
+ExecStart=/usr/bin/python /opt/noting_down/daemon/palmreject.py --pen-max 12 --palm-min 40
 Restart=on-failure
 
 [Install]
